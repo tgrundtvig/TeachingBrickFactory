@@ -1,7 +1,10 @@
-package dk.cphbusiness.dat2024.brickfactory.building;
+package dk.cphbusiness.dat2024.brickfactory.building.models;
 
 import dk.cphbusiness.dat2024.brickfactory.Brick;
 import dk.cphbusiness.dat2024.brickfactory.BrickFactory;
+import dk.cphbusiness.dat2024.brickfactory.building.Model;
+import dk.cphbusiness.dat2024.brickfactory.building.ModelBuildTool;
+import dk.cphbusiness.dat2024.brickfactory.building.ModelDesign;
 
 public class Tower implements ModelDesign
 {

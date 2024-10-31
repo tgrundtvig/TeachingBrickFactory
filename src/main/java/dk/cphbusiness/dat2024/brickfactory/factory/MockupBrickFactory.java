@@ -27,7 +27,13 @@ public class MockupBrickFactory implements BrickFactory
     @Override
     public Brick createLBrick(int xSize, int ySize, int width, int zSize)
     {
-        throw new UnsupportedOperationException("Not implemented yet!");
+        Geometry3D corner = createBasicBrick(width, width, zSize).getGeometry();
+        Geometry3D c1 = csg.translate3DY((ySize-width)*unit).transform(corner);
+        Geometry3D c2 = csg.translate3DX((xSize-width)*unit).transform(corner);
+        Geometry3D leg1 = csg.hull3D(corner, c1);
+        Geometry3D leg2 = csg.hull3D(corner, c2);
+        Geometry3D res = csg.union3D(leg1, leg2);
+        return new BrickImpl(res);
     }
 
     @Override

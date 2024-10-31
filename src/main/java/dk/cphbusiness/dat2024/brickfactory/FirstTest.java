@@ -2,9 +2,8 @@ package dk.cphbusiness.dat2024.brickfactory;
 
 import dk.cphbusiness.dat2024.brickfactory.building.*;
 import dk.cphbusiness.dat2024.brickfactory.building.impl.MockupModelFactoryImpl;
-import dk.cphbusiness.dat2024.brickfactory.building.impl.ModelBuildToolImpl;
 import dk.cphbusiness.dat2024.brickfactory.building.impl.ModelViewerImpl;
-import dk.cphbusiness.dat2024.brickfactory.factory.MockupBrickFactory;
+import dk.cphbusiness.dat2024.brickfactory.building.models.Tower;
 import org.abstractica.javacsg.JavaCSG;
 import org.abstractica.javacsg.JavaCSGFactory;
 
