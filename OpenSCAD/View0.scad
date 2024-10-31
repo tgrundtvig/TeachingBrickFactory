@@ -1,56 +1,24 @@
 union()
 {
-    union()
+    translate([8.0, 8.0, 0.0])
     {
-        hull()
+        linear_extrude(height = 7.84, twist = 0.0, scale = 1.0, slices = 1, center = false)
         {
-            translate([5.0, 5.0, 0.0])
+            scale([15.68, 15.68])
             {
-                linear_extrude(height = 10.0, twist = 0.0, scale = 1.0, slices = 1, center = false)
-                {
-                    scale([10.0, 10.0])
-                    {
-                        M8();
-                    }
-                }
-            }
-            translate([0.0, 30.0, 0.0])
-            {
-                translate([5.0, 5.0, 0.0])
-                {
-                    linear_extrude(height = 10.0, twist = 0.0, scale = 1.0, slices = 1, center = false)
-                    {
-                        scale([10.0, 10.0])
-                        {
-                            M8();
-                        }
-                    }
-                }
+                M8();
             }
         }
-        hull()
+    }
+    translate([0.0, 0.0, 8.0])
+    {
+        translate([8.0, 8.0, 0.0])
         {
-            translate([5.0, 5.0, 0.0])
+            linear_extrude(height = 7.84, twist = 0.0, scale = 1.0, slices = 1, center = false)
             {
-                linear_extrude(height = 10.0, twist = 0.0, scale = 1.0, slices = 1, center = false)
+                scale([15.68, 15.68])
                 {
-                    scale([10.0, 10.0])
-                    {
-                        M8();
-                    }
-                }
-            }
-            translate([30.0, 0.0, 0.0])
-            {
-                translate([5.0, 5.0, 0.0])
-                {
-                    linear_extrude(height = 10.0, twist = 0.0, scale = 1.0, slices = 1, center = false)
-                    {
-                        scale([10.0, 10.0])
-                        {
-                            M8();
-                        }
-                    }
+                    M8();
                 }
             }
         }

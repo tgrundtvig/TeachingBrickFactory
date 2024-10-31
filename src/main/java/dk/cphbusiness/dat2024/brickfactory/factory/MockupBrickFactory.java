@@ -19,7 +19,7 @@ public class MockupBrickFactory implements BrickFactory
     @Override
     public Brick createBasicBrick(int xSize, int ySize, int zSize)
     {
-        Geometry3D res = csg.box3D(xSize*unit, ySize*unit, zSize*unit, false);
+        Geometry3D res = csg.box3D(xSize*unit*0.98, ySize*unit*0.98, zSize*unit*0.98, false);
         res = csg.translate3D(0.5*unit*xSize, 0.5*unit*ySize, 0).transform(res);
         return new BrickImpl(res);
     }
