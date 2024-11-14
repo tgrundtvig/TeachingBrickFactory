@@ -45,7 +45,7 @@ public class TestDesign implements ModelDesign
     {
         double unit = 10;
         JavaCSG csg = JavaCSGFactory.createNoCaching();
-        ModelFactory modelFactory = new MockupModelFactoryImpl(csg, unit);
+        ModelFactory modelFactory = new MyModelFactoryImpl(csg, unit);
         Model test = modelFactory.createModel(new TestDesign());
         ModelViewer viewer = new ModelViewerImpl(csg);
         viewer.view(test);

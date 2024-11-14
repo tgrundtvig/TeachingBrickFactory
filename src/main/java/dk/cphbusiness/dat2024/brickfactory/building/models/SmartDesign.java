@@ -89,7 +89,7 @@ public class SmartDesign implements ModelDesign
 
     public static void main(String[] args)
     {
-        double unit = 10;
+        double unit = 8;
         JavaCSG csg = JavaCSGFactory.createNoCaching();
         ModelFactory modelFactory = new MyModelFactoryImpl(csg, unit);
         Model test = modelFactory.createModel(new SmartDesign());
